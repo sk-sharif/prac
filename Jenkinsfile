@@ -4,7 +4,7 @@ pipeline {
     registryCredential = 'Docker_cred'
   }
 //  properties([gitLabConnection(gitLabConnection: '', jobCredentialId: ''), parameters([string(defaultValue: 'main', name: 'branch')])])
-  properties([
+  options([
     parameters([
       string(name: 'one', defaultValue: 'main'),
     ])
